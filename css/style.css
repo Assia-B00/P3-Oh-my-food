@@ -28,27 +28,26 @@ header {
     width: 50%;
 }
 #search_localisation {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    height: 60px;
-}
-#search_localisation form {
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 60px;
     background-color: #e8e5e5;
-    flex-basis: 100%;
 }
 #div_localisation {
     display: flex;
+    justify-content: center;
     align-items: center;
-    padding-left: 60px;
+}
+#div_localisation i{
+    margin-left: 30px;
 }
 #search_localisation input {
     border: none;
     background-color: transparent;
     font-size: 20px;
-    padding-left: 20px;
+    color:black;
+    padding: 0 0 0 20px;
 }
 #presentation h1 {
     height: 100px;
@@ -75,20 +74,17 @@ header {
     align-items: center;
     background-color: #F2F2F2; 
 }
-#presentation form {
-    height: 120px;
-    display: flex;
-    align-items: center;
-}
 #button_search {
+    margin-top: 30px;
+    margin-bottom: 50px;
     padding: 20px;
     border-radius: 40px; 
-    background-color: #FF79DA;
+    background-image: linear-gradient(180deg, #FF79DA 0%, #9356DC 80%);
     border :none;
+    box-shadow: 4px 4px 2px rgb(157, 154, 154);
     color : white;
     font-size: 18px;
 }
-
 #fonctionnement h2 {
     margin : 50px 0 40px 20px;
 }
