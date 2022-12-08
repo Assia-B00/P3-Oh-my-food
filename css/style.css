@@ -1,6 +1,4 @@
 #accueil {
-    min-width: 375px;
-    max-width: 767px;
     margin: 0%;
 }
 
@@ -186,9 +184,9 @@ main a {
 }
 
 .new_restaurant {
-    position: absolute;
-    right: 30px;
-    top: 960px;
+    position: relative;
+    left: 80%;
+    top: 30px;
     font-size: 12px;
     padding: 5px 10px 5px 10px;
     color: #288364;
@@ -257,9 +255,8 @@ footer i {
 /* ________ Media Queries Tablette ________ */
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
+
     #accueil {
-        max-width: 991px;
-        min-width: 768px;
         margin: 0%;
     }
     #case_fonctionnement {
@@ -285,10 +282,9 @@ footer i {
 /* ________ Media Queries Desktop ________ */
 
 @media screen and (min-width: 992px) and (max-width: 1420px) {
+
     #accueil {
         margin: 0%;
-        max-width: 1420px;
-        min-width: 992px;
     }
 
     #case_fonctionnement {
