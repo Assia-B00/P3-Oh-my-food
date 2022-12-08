@@ -3,20 +3,25 @@
     max-width: 767px;
     margin: 0%;
 }
-* { 
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif , sans-serif;
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
 }
+
 h1 h2 {
     font-family: Shrikhand;
 }
+
 h2 {
     font-size: 22px;
     font-weight: 600;
 }
+
 h3 {
     font-size: 16px;
     font-weight: 500;
 }
+
 header {
     display: flex;
     justify-content: center;
@@ -24,9 +29,11 @@ header {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 #logo {
     width: 50%;
 }
+
 #search_localisation {
     display: flex;
     justify-content: center;
@@ -34,21 +41,25 @@ header {
     height: 60px;
     background-color: #e8e5e5;
 }
+
 #div_localisation {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#div_localisation i{
+
+#div_localisation i {
     margin-left: 30px;
 }
+
 #search_localisation input {
     border: none;
     background-color: transparent;
     font-size: 20px;
-    color:black;
+    color: black;
     padding: 0 0 0 20px;
 }
+
 #presentation h1 {
     height: 100px;
     display: flex;
@@ -59,6 +70,7 @@ header {
     font-weight: 500;
     margin: 20px 45px 0px 45px;
 }
+
 #presentation p {
     display: flex;
     justify-content: center;
@@ -68,51 +80,60 @@ header {
     font-size: 20px;
     margin: 10px;
 }
+
 #presentation {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #F2F2F2; 
+    background-color: #F2F2F2;
 }
+
 #button_search {
     margin-top: 30px;
     margin-bottom: 50px;
     padding: 20px;
-    border-radius: 40px; 
+    border-radius: 40px;
     background-image: linear-gradient(180deg, #FF79DA 0%, #9356DC 80%);
-    border :none;
+    border: none;
     box-shadow: 4px 4px 2px rgb(157, 154, 154);
-    color : white;
+    color: white;
     font-size: 18px;
 }
+
 #fonctionnement {
     margin-bottom: 60px;
 }
+
 #fonctionnement h2 {
-    margin : 40px 0 30px 20px;
+    margin: 40px 0 30px 20px;
 }
+
 .stapes_fonctionnement {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     flex-basis: 100%;
-    border-radius: 25px; 
+    border-radius: 25px;
     padding: 10px 0 10px 10px;
     margin: 0 20px 20px 30px;
     box-shadow: 3px 1px 6px 1px #0000002e;
-    background-color: #F2F2F2; 
+    background-color: #F2F2F2;
     border: none;
 }
+
 .stapes_fonctionnement i {
     color: #5b5959;
     margin-right: 20px;
 }
+
 .stapes_fonctionnement:hover {
     background-color: #f4edfe;
 }
+
 .stapes_fonctionnement i:hover {
-    background-color: #f4edfe;  
+    background-color: #f4edfe;
 }
+
 .numero_button {
     display: flex;
     justify-content: center;
@@ -125,15 +146,18 @@ header {
     background-color: #9356DC;
     padding: 5px;
     position: relative;
-    left : -20px;
+    left: -20px;
 }
+
 #restaurants {
     padding: 40px 20px 20px 20px;
-    background-color: #F2F2F2; 
+    background-color: #F2F2F2;
 }
+
 #blocs_restaurant {
     flex-wrap: wrap;
 }
+
 .cards_restaurant {
     flex-basis: 100%;
     height: 235px;
@@ -142,110 +166,149 @@ header {
     border-radius: 20px;
     margin-bottom: 20px;
 }
+
 .cards_restaurant h3,
 .cards_restaurant p {
     color: black;
     margin: 0 0 6px 0;
 }
+
 .cards_restaurant h3 {
     font-weight: 600;
 }
+
 .cards_restaurant p {
     font-weight: 300;
 }
+
 main a {
     text-decoration: none;
 }
+
 .new_restaurant {
     position: absolute;
-    right : 30px;
-    top : 960px;
+    right: 30px;
+    top: 960px;
     font-size: 12px;
     padding: 5px 10px 5px 10px;
     color: #288364;
     border-radius: 2px;
-    background-color:#99E2D0;
+    background-color: #99E2D0;
 }
+
 .imgrestaurant {
     width: 100%;
     height: 165px;
-    object-fit:cover;
+    object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
+
 .text_cards {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     padding: 10px 16px 0 16px;
 }
+
 main i {
     font-size: 27px;
     color: rgb(228, 163, 210);
 }
+
 footer {
     color: white;
     background-color: #343434f4;
     padding: 20px 0 20px 25px;
 }
+
 #logo_footer {
     width: 30%;
 }
+
 footer ul {
     padding-left: 0%;
 }
+
 footer ul li {
     list-style: none;
     padding-bottom: 10px;
 }
+
 footer a {
     color: white;
     text-decoration: none;
     font-size: 14px;
     font-weight: 400;
 }
+
 footer h2 {
     font-family: Shrikhand;
     font-size: 16px;
     margin: 0%;
 }
+
 footer i {
     margin-right: 10px;
     font-size: 14px;
 }
 
 
-/* ________ Media Queries Desktop ________ */
-
-@media screen and (min-width: 992px) and (max-width: 1400px)
-{
-    #container {
-        margin: auto;
-        padding-left: 54px; 
-        padding-right: 54px;
-        max-width: 1400px;
-        min-width: 992px;
-    }
-    #blocs_restaurant {
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
-
-
 /* ________ Media Queries Tablette ________ */
 
-@media screen and (min-width: 768px) and (max-width: 991px)
-{
-    #container {
-        padding-left: 70px;
-        padding-right: 72px;
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    #accueil {
         max-width: 991px;
         min-width: 768px;
+        margin: 0%;
+    }
+    #case_fonctionnement {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
     }
     #blocs_restaurant {
         display: flex;
-        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .articles {
+        flex-basis: 45%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    footer ul {
+        display: flex;
+        justify-content: space-around;
     }
 }
 
+/* ________ Media Queries Desktop ________ */
+
+@media screen and (min-width: 992px) and (max-width: 1420px) {
+    #accueil {
+        margin: 0%;
+        max-width: 1420px;
+        min-width: 992px;
+    }
+
+    #case_fonctionnement {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #blocs_restaurant {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .articles {
+        flex-basis: 45%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    footer ul {
+        display: flex;
+        justify-content: space-around;
+    }
+}
