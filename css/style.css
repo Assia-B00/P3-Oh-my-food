@@ -185,7 +185,7 @@ main a {
 
 .new_restaurant {
     position: relative;
-    left: 80%;
+    left: 83%;
     top: 30px;
     font-size: 12px;
     padding: 5px 10px 5px 10px;
@@ -211,7 +211,10 @@ main a {
 
 main i {
     font-size: 27px;
-    color: rgb(228, 163, 210);
+}
+
+.heart_like_1 {
+    color: #010000;
 }
 
 footer {
@@ -219,7 +222,6 @@ footer {
     background-color: #343434f4;
     padding: 20px 0 20px 25px;
 }
-
 #logo_footer {
     width: 30%;
 }
