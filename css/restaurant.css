@@ -106,21 +106,42 @@ h1 {
     position: relative;
     top: 0%;
     right: 0%;
-    color: white;
     background-color: #99E2D0;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    font-size: 25px;
+    border-radius: 0 20px 20px 0;
     width: 70px;
     height: 70px;
     display: block;
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: slide-left 1 both;
 }
-.valid:hover {
-    display: none;
+
+@keyframes slide-left {
+
+    0% {
+
+    }
+    100% {
+
+    }
 }
+
+.valid i {
+    color: white;
+    font-size: 25px;
+    animation: rotate 1s both;
+}
+@keyframes rotate {
+
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 #command {
     display:flex;
     justify-content: center;
@@ -135,6 +156,8 @@ h1 {
     color : white;
     font-size: 15px;
 }
+
+/* FOOTER */
 
 footer {
     position: relative;
