@@ -281,26 +281,71 @@ main a {
 
 .heart_like {
     font-size: 27px;
+    cursor: pointer;
 }
 .heart_like_1 {
-    color : #010000;
+    color: black;
     position: relative;
-    display: block;
 }
 .heart_like_2 {
-    color: #9356DC;
+    color: black;
     position: absolute;
     right: 16px;
-    display: none;
-}
-.heart_like_1:hover {
-    color : #010000;
-    display: none;
 }
 .heart_like_2:hover {
-    color: #9356DC;
-    display: block;
-}
+    animation: fill 1s ease-in-out;
+    display: inline-block;
+    opacity: 1;
+    background: linear-gradient(to bottom, #FF79DA, #9356DC);
+    background-image: inherit;
+    color: #FF79DA;
+    font-weight: bold;
+  }
+@keyframes fill {
+    0% {
+      opacity: 0;
+    }
+  
+    10% {
+      opacity: 0.1;
+    }
+  
+    20% {
+      opacity: 0.2;
+    }
+  
+    30% {
+      opacity: 0.3;
+    }
+  
+    40% {
+      opacity: 0.4;
+    }
+  
+    50% {
+      opacity: 0.5;
+    }
+  
+    60% {
+      opacity: 0.6;
+    }
+  
+    70% {
+      opacity: 0.7;
+    }
+  
+    80% {
+      opacity: 0.8;
+    }
+  
+    90% {
+      opacity: 0.9;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
 
 /* FOOTER */
 
