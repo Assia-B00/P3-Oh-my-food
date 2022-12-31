@@ -23,6 +23,79 @@ header {
 .imgrestaurant {
     width: 100%;
 }
+
+/*___ Animation du CŒUR ___*/
+
+.heart_like {
+    font-size: 27px;
+    cursor: pointer;
+}
+.heart_like_1 {
+    color: black;
+    position: relative;
+}
+.heart_like_2 {
+    color: black;
+    position: absolute;
+    right: 40px;
+}
+.heart_like_2:hover {
+    animation: fill 0.6s ease-in-out;
+    display: inline-block;
+    opacity: 1;
+    background: linear-gradient(to bottom, #FF79DA, #9356DC);
+    background-image: inherit;
+    color: #FF79DA;
+    font-weight: bold;
+  }
+@keyframes fill {
+    0% {
+      opacity: 0;
+    }
+  
+    10% {
+      opacity: 0.1;
+    }
+  
+    20% {
+      opacity: 0.2;
+    }
+  
+    30% {
+      opacity: 0.3;
+    }
+  
+    40% {
+      opacity: 0.4;
+    }
+  
+    50% {
+      opacity: 0.5;
+    }
+  
+    60% {
+      opacity: 0.6;
+    }
+  
+    70% {
+      opacity: 0.7;
+    }
+  
+    80% {
+      opacity: 0.8;
+    }
+  
+    90% {
+      opacity: 0.9;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+
+/*___ Titre restaurant ___*/
+
 main {
     padding: 30px 10px 10px 15px;
     background-color: #f2f2f2;
@@ -43,9 +116,6 @@ h1 {
     font-size: 26px;
     font-weight: 50;
 }
-.heart_like_1 {
-    font-size: 27px;
-}
 .title_menu {
     font-size: 16px;
     font-weight: 200;
@@ -60,10 +130,11 @@ h1 {
     background-color: #99E2D0 ;
 }
 
+/*___ Les plats ___*/
+
 .stape_menu {
     margin-bottom: 40px;
 }
-
 .choice {
     display: flex;
     flex-direction: row;
@@ -76,18 +147,6 @@ h1 {
     cursor: pointer;
     position: relative;
 } 
-.choice:hover .valid {
-        transition: ease 2s;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-}
-.menu_info {
-    display: flex;
-    flex-direction: column; 
-    flex-basis: 100%;
-    margin: 10px 20px 10px 10px;
-}
 .choice h3 {
     font-family: Roboto;
     font-size: 19px;
@@ -105,18 +164,28 @@ h1 {
     padding-left: 10px;
     padding-bottom: 5px;
 }
+.menu_info {
+    display: flex;
+    flex-direction: column; 
+    flex-basis: 100%;
+    margin: 10px 20px 10px 10px;
+}
 .menu_price {
-    width: 100%;
     display: flex;
     justify-content: space-between;
+    white-space: nowrap;
+    position: relative;
 }
 .menu_price p {
     text-overflow: ellipsis;
+    overflow: hidden;
 }
 .price {
     font-size: 14px;
     font-weight: 700;
 }
+
+/*___ Animation : Sélection d'un plat ___*/
 
 .valid {
     display: none;
@@ -126,28 +195,38 @@ h1 {
     width: 70px;
     height: 70px;
     position: absolute;
-    right: -10px;
+    right: 0px;
     animation : slide-left 1s both;
+    transform-origin: right;
+}
+.choice:hover .valid {
+    transition: ease 2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.choice:hover > .menu_info .menu_price .price {
+    margin-right: 70px;
+    transition: ease 1s;
 }
 
 @keyframes slide-left {
     0% {
-    transform: translateX(0);
+    transform: scaleX(0);
     }
     100% {
-    transform: translateX(-70px);
+    transform: scaleX(1);
     }
   }
 
-.valid i {
+.fa-circle-check {
     color: white;
     font-size: 25px;
-}
-.fa-circle-check {
-    animation: rotate 1s both;
+    animation: full_tour 1s ease;
+    animation-delay: 0.2s;
 }
 
-@keyframes rotate {
+@keyframes full_tour {
 
     0% {
         transform: rotate(0);
@@ -206,7 +285,7 @@ footer i {
     font-size: 14px;
 }
 
-/*___ ANIMATIONS ___*/
+/*___ Animation : Affichage des menus au chargement de la page ___*/
 
 
 @keyframes apparition {
@@ -258,6 +337,10 @@ main :nth-child(4) {
         padding-right: 60px;
         padding-left: 60px;
     }
+    footer ul {
+        display: flex;
+        justify-content: space-around;
+    }
 }
 /* ________ Media Queries Desktop ________ */
 
@@ -279,9 +362,13 @@ main :nth-child(4) {
         justify-content: space-around;
     }
     .choice h3 {
-        font-size: 18px;
+        font-size: 17px;
     }
     .choice p {
-        font-size: 13px;
+        font-size: 12px;
+    }
+    footer ul {
+        display: flex;
+        justify-content: space-around;
     }
 }

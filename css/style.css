@@ -293,7 +293,7 @@ main a {
     right: 16px;
 }
 .heart_like_2:hover {
-    animation: fill 1s ease-in-out;
+    animation: fill 0.6s ease-in-out;
     display: inline-block;
     opacity: 1;
     background: linear-gradient(to bottom, #FF79DA, #9356DC);
