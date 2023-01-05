@@ -11,7 +11,7 @@ header {
     font-size: 20px;
     color: black;
     position: relative;
-    left: 0px
+    left: 30px
 }
 #logo {
     display: flex;
@@ -22,6 +22,18 @@ header {
 }
 .imgrestaurant {
     width: 100%;
+}
+.img1 {
+    object-position: center;
+}
+.img2 {
+    object-position: 50% 60%;
+}
+.img3 {
+    object-position: 50% 75%;
+}
+.img4 {
+    object-position: 50% 75%;
 }
 
 /*___ Animation du CŒUR ___*/
