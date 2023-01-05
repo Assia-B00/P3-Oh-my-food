@@ -271,6 +271,18 @@ main a {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
+.img1 {
+    object-position: center;
+}
+.img2 {
+    object-position: center;
+}
+.img3 {
+    object-position: bottom;
+}
+.img4 {
+    object-position: bottom;
+}
 
 .text_cards {
     display: flex;
