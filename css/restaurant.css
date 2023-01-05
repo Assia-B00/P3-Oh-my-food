@@ -136,39 +136,36 @@ h1 {
     margin-bottom: 40px;
 }
 .choice {
-    /*display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    width: 90vw;
+    position: relative;
     border-radius: 20px;
     background-color: white;
     box-shadow: 3px 1px 6px 1px #0000002e;
     margin-bottom: 15px;
-    cursor: pointer;*/
-    position: relative;
+    cursor: pointer;
 } 
-.choice h3 {
+.choice h3,
+.choice p {
+    margin: 0;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+.menu_info {
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.menu_info h3 {
+    margin: 0px;
     font-family: Roboto;
     font-size: 19px;
     font-weight: 990;
+    white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-}
-.choice p {
-    font-size: 14px;
-    font-weight: 300;
-}
-.choice h3,
-.choice p {
-    /*margin: 0;
-    padding-left: 10px;
-    padding-bottom: 5px;*/
-}
-.menu_info {
-    display: flex;
-    flex-direction: column; 
-    flex-basis: 100%;
-    margin: 10px 20px 10px 10px;
+    margin: 0;
 }
 .menu_price {
     display: flex;
@@ -179,6 +176,9 @@ h1 {
 .menu_price p {
     text-overflow: ellipsis;
     overflow: hidden;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0;
 }
 .price {
     font-size: 14px;
@@ -189,52 +189,58 @@ h1 {
 
 .valid {
     display: none;
-    background-color: #99E2D0;
-    border-radius: 0 20px 20px 0;
-    cursor: pointer;
-    width: 70px;
-    height: 100%;
-    position: absolute;
-    right: 0px;
-    animation : slide-left 1s ease;
-    transform-origin: right;
-}
-.choice:hover .valid {
-    transition: ease 1s;
-    display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #99e2d0;
+    margin: 0;
+    top: 0px;
+    width: 70px;
+    height: 100%;
+    right: 0px;
+    border-radius: 0px 20px 20px 0px;
+    position: absolute;
+    font-size: 20px; 
 }
-.choice:hover > .menu_info .menu_price {
-    margin-right: 70px;
-    transition: ease 1s;
-}
-
 @keyframes slide-left {
     0% {
-    transform: scaleX(0);
+        transform: scaleX(0);
     }
+
     100% {
-    transform: scaleX(1);
+        transform: scaleX(1);
     }
-  }
+}
+.menu_info:hover .valid {
+    display: flex;
+    animation: slide-left 1s both;
+    transform-origin: right;   
+}
+.price {
+    margin-top:0;
+}
+.menu_info:hover>.menu_price .price {
+    margin-right: 70px;
+    transition: ease 1s;
+    animation-delay: 1s;
+}
 
 .fa-circle-check {
-    color: white;
     font-size: 25px;
+    font-weight: bold;
+    color: white;
     animation: full_tour 1s ease;
     animation-delay: 0.2s;
 }
-
 @keyframes full_tour {
-
     0% {
-        transform: rotate(0);
+        transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
 }
+/*___ Bouton Commander ___*/ 
 
 #command {
     display:flex;
@@ -250,8 +256,11 @@ h1 {
     color : white;
     font-size: 15px;
 }
+#button_search:hover {
+    opacity: 0.8;
+}
 
-/* FOOTER */
+/*___ FOOTER ___*/
 
 footer {
     position: relative;
@@ -285,7 +294,7 @@ footer i {
     font-size: 14px;
 }
 
-/*___ Animation : Affichage des menus au chargement de la page ___*/
+/*___ Animation : Apparition des menus au chargement de la page ___*/
 
 
 @keyframes apparition {
@@ -335,6 +344,9 @@ main :nth-child(4) {
         position: relative;
         top: -100px;
     }
+    .choice {
+        width: 90vw;
+    }
     footer ul {
         display: flex;
         justify-content: space-around;
@@ -342,7 +354,7 @@ main :nth-child(4) {
 }
 /* ________ Media Queries Desktop ________ */
 
-@media screen and (min-width: 992px) and (max-width: 1420px) {
+@media screen and (min-width: 992px) and (max-width: 1450px) {
 
     #la_palette_du_gout {
         margin-right: 0%;
@@ -352,12 +364,15 @@ main :nth-child(4) {
     }
     .imgrestaurant {
         width: 100%;
-        height: 500px;
+        height: 350px;
         object-fit: cover;
     }
     #menu {
         display: flex;
         justify-content: space-between;
+    }
+    .choice {
+        width: 30vw;
     }
     .choice h3 {
         font-size: 17px;
